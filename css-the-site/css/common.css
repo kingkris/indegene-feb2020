@@ -60,4 +60,44 @@ attribute Selectors
 }
 =====  End of Selectors  ======*/
 
+html{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400px;
+	font-size: 16px;
+	line-height: 1.4;
+
+	/* font: 400 16px/1.4 'Poppins', sans-serif; */
+	color: #444;
+}
+
+h1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+}
+
+
+.site-header h1{ font-size: 52px;color: #444;}
+.site-header h1 a{ color: #444;text-decoration: none;}
+.site-header h1 a small{ font-size: 16px;font-weight: normal;}
+
+.menu{}
+.menu li{
+	border: solid 2px red;
+	display: inline-block;
+}
+.menu li a{
+	color: #444;
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+	
+	transition: all 250ms ease;
+	position: relative;	
+}
+.menu li a:hover,
+.menu li.active a{
+	color: #FCB415;
+}
+
+
 

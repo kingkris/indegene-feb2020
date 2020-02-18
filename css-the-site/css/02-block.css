@@ -72,4 +72,121 @@ inherit;
    Demo of Block related properties
    ========================================================================== */
 
-   
+   .box{
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: lightgreen;
+    border-radius: 10px;
+  }
+  
+
+
+
+.word-space-demo{
+    word-spacing: 30px;
+}
+.letter-space-demo{
+    letter-spacing: 30px;
+}
+.vertical-align-demo img{
+    vertical-align: top;
+}
+.text-align-demo *{
+    border: solid 2px red;
+}
+
+.text-align-demo{
+    text-align: center;
+}
+.text-indent-demo{
+    text-indent: -50px;
+}
+
+.white-space-demo div{
+    white-space: pre-wrap;
+
+}
+
+
+
+.dabba{
+    border: solid 1px black;
+    background-color: lime;
+}
+.display-block-demo .dabba{
+    display: block;
+    width: 25%;
+}
+.display-inline-demo .dabba{
+    display: inline;
+    width: 25%;
+}
+.display-inline-block-demo .dabba{
+    display: inline-block;
+    width: 25%;
+}
+
+
+.tabz{
+    background-color: lightgreen;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    min-height: 400px;
+}
+.tabz li{
+    position: relative;
+    display: inline-block;
+    width: 30%;
+}
+.tabz li a{
+    display: block;
+    border-bottom: 4px solid #000;
+    text-decoration: none;
+    color: #444;
+}
+.tabz li .content{
+    display: none;
+    border: 1px solid #3c790a;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 26px;
+}
+.tabz li:hover .content{
+    display: block;
+}
+
+.content-demo h2{
+    text-align: center;
+    border: dotted 2px red;
+}
+.content-demo h2 span{
+    display: none;
+}
+.content-demo h2:before{
+    text-align: center;
+    content: "\20B9";
+    color: lightsalmon;
+    font-weight: normal;
+    font-size: 20px;
+    background-color: #fff;
+    border: solid 1px red;
+}
+.content-demo h2:after{
+    text-align: center;
+    content: "here it goes";
+    color: lightsalmon;
+    font-weight: normal;
+    font-size: 20px;
+    background-color: #fff;
+    margin-left: 10px;
+}
+.text-overflow-demo h2{
+    border: solid 2px red;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
