@@ -1,0 +1,63 @@
+/* This one is a CSS comment */
+/*Use Sublime package for adding comment snippets */
+
+/*=================================
+=            Selectors            =
+=================================
+
+selector-name{
+	css-rule : value;
+	css-rule : value;
+	css-rule : value;
+	..:..;
+	..:..;
+	..:..;
+}
+
+Universal Selectors
+	They are applied to all the html elements of that documnet
+*{
+	css-rule : value;
+	....
+}
+
+
+Tag or Type Selectors
+p{
+	css-rule : value;
+	....
+}
+
+Class Selectors
+.user-defined-name{
+	css-rule : value;
+	....
+} 
+======================
+a class name
+		* can be alpha numeric
+		* must not start with a number, 
+		* must not have special characters apart from hyphen and underscore 
+
+id Selectors
+#user-defined-name{
+	css-rule : value;
+	....
+}
+
+descendant Selectors
+psuedo Selectors - there are two types
+	
+1.	psuedo classes - starts with :
+			:link, :hover, :active, :focus, :first-child, :last-child, :nth-child()
+2. 	psuedo elements - starts with ::
+			::after, ::before, ::first-line, ::first-letter, ::selection
+
+attribute Selectors
+[attribute-name]{
+	css-rule : value;
+	....
+}
+=====  End of Selectors  ======*/
+
+
