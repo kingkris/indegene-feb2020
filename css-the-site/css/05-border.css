@@ -92,4 +92,42 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Background_and_Borders/Bord
    Demo of Border related properties
    ========================================================================== */
 
-   
+   .box{margin-bottom: 20px;}
+
+   .bdr-demo{
+       color: green;
+       border-width: 10px;
+       border-style: solid;
+       border-color: mediumpurple;
+   }
+   .bdr-demo-2{
+       color: green;
+       border-width: 30px 20px 3px;
+       border-style: double;
+       border-color: mediumpurple green;
+   }
+
+   .bdr-demo-2 h3{
+       background-color: indigo;
+       color: #FFF;
+       line-height: 40px;
+       text-align: center;
+       position: relative;
+   }
+   .bdr-demo-2 h3:after{
+       content: "";
+       width: 0;
+       height: 0;
+       border-style: solid;
+       border-width: 20px;
+       border-color: indigo transparent transparent transparent;
+       position: absolute;
+       bottom: -40px;
+       left: 0;
+       right: 0;
+       margin-left: auto;
+       margin-right: auto;
+   }
+
+
+
