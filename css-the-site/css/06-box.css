@@ -162,4 +162,144 @@ Box related important links
    Demo of Box related properties
    ========================================================================== */
 
-   
+.box{
+    border: dotted 1px red;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.box h3{
+    background-color: turquoise;
+    line-height: 30px;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.wd-demo{
+    width: 300px;
+    border: 1px solid #000;
+}
+.min-wd-demo{
+    min-width: 300px;
+    border: 1px solid #000;
+    /* display: inline-block; */
+    /* float: left; */
+}
+
+.max-wd-demo{
+    border: 1px solid #000;
+    max-width: 500px;
+    width: 600px;
+}
+.height-demo{
+    border: 1px solid #000;
+    height: 50px;
+    width: 400px;
+}
+.min-height-demo{
+    border: 1px solid #000;
+    min-height: 50px;
+    width: 400px;
+}
+.max-height-demo{
+    border: 1px solid #000;
+    min-height: 50px;
+    max-height: 70px;
+    width: 400px;
+}
+.overflow-demo{
+    border: 1px solid #000;
+    width: 400px;
+    height: 200px;
+    overflow: auto;
+}
+
+.box-sizing-demo{
+    width: 300px;
+    height: 100px;
+    padding: 25px;
+    border: solid 10px #000;
+}
+.box-sizing-demo1{
+    box-sizing: border-box;
+    width: 300px;
+    height: 100px;
+    padding: 25px;
+    border: solid 10px #000;
+}
+
+.float-demo{
+    background-color: green;
+}
+.float-left{
+    border: 1px solid #000;
+    float: left;
+    min-width: 180px;
+    height: 100px;
+}
+
+.clear-left{
+    clear: both;
+}
+.cleared-text{
+    border: solid 2px red;
+    clear: both;
+}
+
+.fl-container{
+    border: solid 4px red;
+    margin: 10px;
+    background-color: goldenrod;
+}
+.fl-container:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.cf:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.fl-container div{
+    border: solid 2px green;
+}
+
+.left-floated{ float: left;}
+.right-floated{ float: right;}
+
+
+
+
+
+/* Cards layout */
+.cards{
+    background-color: indigo;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.cards *{
+    box-sizing: border-box;
+}
+.gallery:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.pic{
+    width: 20%;
+    border: solid 5px #FFF;
+    float: left;
+}
+.pic img{
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
