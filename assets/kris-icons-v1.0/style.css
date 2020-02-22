@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'kris-icons';
   src:
-    url('fonts/kris-icons.ttf?gjsg63') format('truetype'),
-    url('fonts/kris-icons.woff?gjsg63') format('woff'),
-    url('fonts/kris-icons.svg?gjsg63#kris-icons') format('svg');
+    url('fonts/kris-icons.ttf?66u7bo') format('truetype'),
+    url('fonts/kris-icons.woff?66u7bo') format('woff'),
+    url('fonts/kris-icons.svg?66u7bo#kris-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,6 +24,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-np_hand_1643479_000000:before {
+  content: "\e917";
+}
+.icon-np_hand_2302656_000000:before {
+  content: "\e918";
+}
+.icon-np_hand_2380155_000000:before {
+  content: "\e919";
+}
+.icon-np_hands_2594739_000000:before {
+  content: "\e91a";
+}
 .icon-anchor:before {
   content: "\e901";
 }
