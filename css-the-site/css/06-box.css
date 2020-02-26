@@ -299,7 +299,37 @@ Box related important links
     display: block;
 }
 
-
+.parent-dabba{
+    /* border-width: 10px;
+    border-style: solid;
+    border-color: red blue green black; */
+    border: 10px solid red;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+._child{
+    border: 5px solid blue;
+}
+._sibling{
+    border: 5px solid green;
+}
+._fl{
+    float: left;
+    min-height: 50px;
+}
+._fr{
+    float: right;
+    min-height: 50px;
+}
+._clear-both{
+    clear: both;
+}
+._clear-fix::after{
+    content: "";
+    display: block;
+    clear: both;
+    border: 1px solid #000;
+}
 
 
 

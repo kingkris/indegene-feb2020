@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  background-color: aliceblue;
+}
+
+.sh{
+  border-bottom: 10px solid deepskyblue;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.container:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+@media (min-width:840px){
+  .container{
+    width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.logo{
+  width: 70px;
+  height: 70px;
+  background-color: dodgerblue;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 70px;
+  color: #FFF;
+  margin-left: auto;
+  margin-right: auto;
+}
+.info{display: none;}
+
+@media(min-width:768px){
+  .logo{
+    float: left;
+  }
+  .info{
+    display: block;
+    float: right;
+    border: 1px solid #000;
+    margin: 25px 0 0;
+  }
+}
