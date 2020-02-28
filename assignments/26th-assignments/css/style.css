@@ -1,0 +1,273 @@
+@import url('normalize.css');
+
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #d4d4d4;
+  color: #666674;
+}
+
+/* Layout Commons */
+
+.bg-green{background-color: lightgreen;}
+.bg-blue{background-color: lightblue;}
+.bg-white{background-color: white;}
+
+.row{
+  clear: both;
+  padding: 1px;
+}
+.row:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.one-half{
+  width:50%;
+  float: left;
+}
+h1{
+  font-size: 26px;
+  text-align: center;
+}
+.img-holder{
+  text-align: center;
+  line-height: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+===============================
+******Widget 02****************
+===============================
+*/
+.widget-02{
+  width: 410px;
+  box-shadow: 0 0 13px 0 rgba(112, 107, 162, 0.05);
+  border: solid 1px #f8f9fc;
+  background-color: #716aca;
+  margin-left: auto;
+  margin-right: auto;
+}
+.widget-02 header{
+  border: 1px solid #000;
+  margin: 41px 31px 0;
+}
+.widget-02 header:after{
+  clear: both;
+  content: "";
+  display: block;
+}
+.widget-02 header h3{
+  margin: 0;
+  float: left;
+  font-size: 20px;
+  font-weight: normal;
+  color: #FFF;
+}
+.ham{
+  float: right;
+  padding: 10px;
+  cursor: pointer;
+}
+.ham i{
+  background-color: #00c5dc;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+}
+.ham i:before,
+.ham i:after{
+  background-color: #00c5dc;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+}
+.ham i:before{ left: -10px;}
+.ham i:after{ right: -10px;}
+.content{
+  margin-top: 120px;
+  border: 1px solid #000;
+  padding-bottom: 50px;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+}
+.content p{
+  color: #fff;
+  text-align: center;
+  font-size: 21px;
+  line-height: 28px;
+  padding: 0 30px;
+  margin-top: 0;
+}
+.author-details{
+  border: 1px solid #000;
+}
+.author-details img{
+  float: left;
+  width: 36px;
+  height: auto;
+  border-radius: 50%;
+}
+.author-details h4{
+  margin: 0 0 0 45px;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+}
+.author-details time{
+  margin: 0 0 0 45px;
+  color: #a9a5e3;
+  font-size: 13px;
+  display: block;
+}
+
+
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.6s infinite both;
+	        animation: scale-up-center 0.6s infinite both;
+}
+
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+            opacity: .6;
+    }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 0;
+    }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+            opacity: .6;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 0;
+  }
+}
+
+
+
+.circle-ripple{
+  width: 300px;
+  height: 300px;
+  margin: 60px auto;
+  border: 1px solid #000;
+  position: relative;
+}
+
+.circle{
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;left: 0;
+  bottom: 0;right: 0;
+  margin: auto;
+
+	-webkit-animation: scale-up-center 0.6s infinite both;
+	        animation: scale-up-center 0.6s infinite both;
+}
+.circle1{
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;left: 0;
+  bottom: 0;right: 0;
+  margin: auto;
+  width: 80px;
+  height: 80px;
+
+}
+.circle:nth-child(1){
+  width: 200px;
+  height: 200px;
+}
+.circle:nth-child(2){
+  width: 160px;
+  height: 160px;
+}
+.circle:nth-child(3){
+  width: 120px;
+  height: 120px;
+}
+.circle:nth-child(4){
+  width: 80px;
+  height: 80px;
+}
+
+
+.parent{
+  width: 500px;
+  padding: 50px;
+  background-color: green;
+}
+.child{
+  width: 50%;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.box{
+  width: 600px;
+  margin: 30px auto;
+  border: 1px solid #000;
+  padding: 20px;
+  background-color: #ebebeb;
+}
+.img-wrap{
+  background-color: lime;
+  width: 150px;
+  height: 150px;
+  float: left; 
+  margin: 0 10px 10px 0;
+}
+.img-wrap img{
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 5px;
+}
+.content-wrap{
+  border: 1px solid #000;
+  margin-left: 160px;
+}
+

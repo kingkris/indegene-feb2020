@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - The Journey of Style</title>
+    <meta name="description" content="This page includes the demo of all the css Properties">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/15-forms.css">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800|Poppins:400,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="site-header">
+      <h1><a href="index.html">CSS <small>the journey of &lt;style&gt;</small></a></h1>
+      <nav class="main-menu">
+        <ul class="menu">
+          <li><a href="01-type.html">Type</a></li>
+          <li><a href="02-block.html">Block</a></li>
+          <li><a href="03-background.html">Background</a></li>
+          <li><a href="04-list.html">List</a></li>
+          <li><a href="05-border.html">Border</a></li>
+          <li><a href="06-box.html">Box</a></li>
+          <li><a href="07-position.html">Position</a></li>
+          <li><a href="08-flex.html">Flex</a></li>
+          <li><a href="09-grids.html">Grids</a></li>
+          <li><a href="10-at-rules.html">@ Rules</a></li>
+          <li class="active"><a href="11-font-icons.html">Icons</a></li>
+          <li><a href="12-animations.html">Animations</a></li>
+          <li><a href="13-tables.html">Tables</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Form Elements</h2>
+      <div class="form-wrap">
+        <form action="thankyou.html" method="get" name="demo-form1"> 
+
+          <fieldset >
+            <legend>Basic Information</legend>
+
+            <div class="form-item">
+              <label for="df-name">Name</label>
+              <input type="text" name="df-name" id="df-name"  placeholder="Enter Your Name">
+            </div>
+            <div class="form-item">
+              <label for="df-pass">Password</label>
+              <input type="password" name="df-pass" id="df-pass"   placeholder="Enter Your password">
+            </div>
+            <div class="form-item">
+              <label for="df-email">Email</label>
+              <input type="email" name="df-email" id="df-email"  placeholder="Enter Your Email">
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Address Information</legend>
+
+            <div class="form-item">
+              <p>Courses available</p>
+              <div class="form-checkbox-wrap">
+                <input type="checkbox" name="df-course" id="df-course-html" value="html"> 
+                <label for="df-course-html">HTML</label>
+              </div>
+              <div class="form-checkbox-wrap">
+                <input type="checkbox" name="df-course" id="df-course-js" value="js"> 
+                <label for="df-course-js">Java Script</label>
+              </div>
+              <div class="form-checkbox-wrap">
+                <input type="checkbox" name="df-course" id="df-course-css3" value="css3"> 
+                <label for="df-course-css3">CSS3</label>
+              </div>
+            </div><!-- form-item -->
+
+            <div class="form-item">
+              <label for="df-message">Message</label>
+              <textarea name="df-message" id="df-message" ></textarea>
+
+            </div><!-- form-item -->
+            <div class="form-item">
+              <label for="df-city">City</label>
+              
+              <!-- <select name="df-city" id="df-city">
+                <optgroup label="Metro">
+                  <option value="Bangalore">Bangalore</option>
+                  <option value="Chennai">Chennai</option>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Delhi">Delhi</option>
+                </optgroup>
+                <optgroup label="Other Cities">
+                  <option value="Mysore">Mysore</option>
+                  <option value="Hyderabad">Hyderabad</option>
+                  <option value="Lucknow">Lucknow</option>
+                  <option value="Ameerpet">Ameerpet</option>
+                </optgroup>
+
+              </select> -->
+
+
+              <select class="js-example-placeholder-multiple js-states form-control" multiple="multiple">
+                <optgroup label="Metro">
+                  <option value="Bangalore">Bangalore</option>
+                  <option value="Chennai">Chennai</option>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Delhi">Delhi</option>
+                </optgroup>
+                <optgroup label="Other Cities">
+                  <option value="Mysore">Mysore</option>
+                  <option value="Hyderabad">Hyderabad</option>
+                  <option value="Lucknow">Lucknow</option>
+                  <option value="Ameerpet">Ameerpet</option>
+                </optgroup>
+
+
+              </select>
+
+            </div><!-- form-item -->
+            <div class="form-item">
+              <label for="df-email">Email</label>
+              <div class="input-box-icon">
+                <input type="email" name="df-email" id="df-email"  placeholder="Enter Your Email">
+              </div>
+            </div><!-- form-item -->
+  
+          </fieldset>
+          <div class="form-item">
+            <input type="submit" value="Submit">
+          </div>
+
+        </form>
+      </div>
+
+
+      
+      
+      
+    </main>
+    <footer class="site-footer">
+      &copy; - 2020, Indegene. All rights reserved.
+    </footer>
+  </div><!-- eo .wrapper -->
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+
+
+
+  <script>
+    $(".js-example-placeholder-multiple").select2({
+      placeholder: "Select a state"
+    });
+  </script>
+
+
+
+</body>
+</html>

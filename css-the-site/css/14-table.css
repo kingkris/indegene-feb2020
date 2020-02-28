@@ -16,8 +16,6 @@ border-collapse
 border-spacing
 empty-cells – show | hide
 
-
-
 */
 
 /* ==========================================================================
@@ -29,6 +27,40 @@ empty-cells – show | hide
 *{
   box-sizing: border-box;
 }
+
+.tbl-demo{
+  border: 1px solid #000;
+  margin-bottom: 30px;
+}
+
+.tbl-demo tr, /* border to row won't work */
+.tbl-demo th,
+.tbl-demo td{
+  border: 1px solid #00F;
+}
+
+.blk-bdr{
+  border: 1px solid #000;
+}
+
+.tbl-100{
+  border: 4px solid red;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.tbl-100 td{
+  border: 4px solid blue;
+}
+
+.tar{
+  text-align: right;
+  line-height: .5;
+}
+.td-logo{
+  width: 130px;
+}
+
 
 .mytbl{
   border: solid 3px green;
