@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider Example</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto+Slab&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header class="sh">
+    <div class="container">
+      <h1 class="logo">
+        <a href="#">
+          KriShne Gowda
+          <strong>me, myself & the mighty web</strong>
+        </a>
+      </h1>
+      <div class="ham-btn ">
+        <i></i>
+        <i></i>
+        <i></i>
+      </div>
+      <nav class="main-nav ">
+        <ul class="main-menu">
+          <li class="active"><a href="#" class="icon-aperture"><span>Home</span></a></li>
+          <li><a href="#" class="icon-at-sign"><span>About me</span></a></li>
+          <li><a href="#" class="icon-award"><span>My Works</span></a></li>
+          <li><a href="#" class="icon-compass"><span>My Pictures</span></a></li>
+          <li><a href="#" class="icon-feather"><span>Blog</span></a></li>
+          <li><a href="#" class="icon-github1"><span>Hire me</span></a></li>
+        </ul>
+        <ul class="social-menu">
+          <li><a href="#" class="icon-facebook"><span>FB</span></a></li>
+          <li><a href="#" class="icon-instagram"><span>FB</span></a></li>
+          <li><a href="#" class="icon-whatsapp"><span>FB</span></a></li>
+          <li><a href="#" class="icon-twitter"><span>FB</span></a></li>
+          <li><a href="#" class="icon-linkedin2"><span>FB</span></a></li>
+        </ul>
+      </nav>
+      <div class="contact-info">
+        <a href="mailto:kris@htmlden.com" class="icon-mail" >
+          <span>kris@htmlden.com</span>
+        </a>
+        <a href="tel:+919880439463" class="icon-phone" >
+          <span>9880439463</span>
+        </a>
+      </div><!-- eo contact-info -->
+    </div><!-- eo container -->
+  </header>
+  <div class="container">
+    <div class="slider">
+      <div class="slide">
+        <img src="img/team-indegene.jpg" alt="team indegene">
+        <div class="slide-text">
+          <p><q>Coming together is a beginning. Keeping together is progress. Working together is success.</q> --<cite>Henry Ford</cite></p>
+          <a href="#">Join the Team</a>
+        </div>
+      </div><!-- eo slide -->
+      <div class="arrows">
+        <span class="arrow-left"></span>
+        <span class="arrow-right"></span>
+      </div>
+    </div><!-- eo slider -->
+  </div><!-- eo container -->
+
+
+  <div class="spacer"></div>
+
+
+  <div class="some-box">
+    there is some content
+    <div class="img-holder">
+      <img src="img/left-arrow.png" alt="">
+    </div>
+    <div class="img-holder">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAYCAYAAAAh8HdUAAABUElEQVQ4jY3UP0iVURgH4EctiRDFwUUMF4dwcXMKHCzTIYIaTFpqzUaHtpwUHHVsrMU7FImI4UWwyRaXloJEkCYVQqGQUJAX3isi997v+y3ng3Meznv+fS2VSkXJdGIZb26UBLexgpH4bi0B2vEpwS6eF6GbiPrH8BsPom2G2vAej3GI+9iLjkaoBe8wiT8Yxc9aZz0UYAkvcYwJfL86oB5awDT+ZWnfrg+4jmYxg/94gq16tV9FMfgtzvEMXxqs9xK9zrICvMhzaZjWXPBiDniFD81AbabYztixv9guAjUU5XxEB6q4WwadYQpr6MEGBopQJLb4ac7Ul+2dIhQ5zcP8in5sorcIyVvwKDdkIEvtKUKRE4xjB4MJu4tQJC7qw7yoQ1hHVxGKHOUb+oFhrOazb4oiB/laf+EePuNWmX9EPPO4Nfs583wZFAkQsIq5C8isQc66W12vAAAAAElFTkSuQmCC" alt="">
+    </div>
+
+
+
+    
+  </div>
+  <div class="spacer"></div>
+
+  <div class="full-width-box">
+    <div class="kg_container">
+      container
+    </div>
+  </div>
+
+
+
+  <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        
+  <script>
+
+    $('.logo').css('border', 'none')
+
+
+    $(document).ready(function () {
+      $('.ham-btn').click(function (e) { 
+        $(this).toggleClass('_clicked').next().slideToggle();
+      });
+    });
+  </script>
+
+
+</body>
+</html>

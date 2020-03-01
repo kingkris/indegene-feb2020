@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider Example</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto+Slab&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="jquery-demo.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="sh sh-transparent">
+    <div class="container">
+      <h1 class="logo">
+        <a href="#">
+          Team Indegene
+          <strong>the web warriors</strong>
+        </a>
+      </h1>
+      <div class="ham-btn ">
+        <i></i>
+        <i></i>
+        <i></i>
+      </div>
+      <nav class="main-nav ">
+        <ul class="main-menu">
+          <li class="active"><a href="#" class="icon-aperture"><span>Home</span></a></li>
+          <li><a href="#" class="icon-at-sign"><span>About me</span></a></li>
+          <li><a href="#" class="icon-award"><span>My Works</span></a></li>
+          <li><a href="#" class="icon-compass"><span>My Pictures</span></a></li>
+          <li><a href="#" class="icon-feather"><span>Blog</span></a></li>
+          <li><a href="#" class="icon-github1"><span>Hire me</span></a></li>
+        </ul>
+        <ul class="social-menu">
+          <li><a href="#" class="icon-facebook"><span>FB</span></a></li>
+          <li><a href="#" class="icon-instagram"><span>FB</span></a></li>
+          <li><a href="#" class="icon-whatsapp"><span>FB</span></a></li>
+          <li><a href="#" class="icon-twitter"><span>FB</span></a></li>
+          <li><a href="#" class="icon-linkedin2"><span>FB</span></a></li>
+        </ul>
+      </nav>
+      <div class="contact-info">
+        <a href="mailto:kris@htmlden.com" class="icon-mail" >
+          <span>kris@htmlden.com</span>
+        </a>
+        <a href="tel:+919880439463" class="icon-phone" >
+          <span>9880439463</span>
+        </a>
+      </div><!-- eo contact-info -->
+    </div><!-- eo container -->
+  </header>
+
+<div class="_banner">
+  <div class="overlay"></div>
+<img src="img/team-indegene.jpg" alt="">
+</div>
+
+
+  <div class="container" id="top"> 
+    <a href="#top" class="back-top">back to top</a>
+    <h1>Welcome to jQuery</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo delectus voluptatum fuga itaque neque voluptas, quis voluptatibus sint laudantium cum odio hic maxime, deleniti beatae placeat architecto optio. Omnis, quidem.</p>
+    <div class="spacer">
+      <nav>
+        <ul class="menu">
+          <li><a href="#">link 01</a></li>
+          <li><a href="#">link 02</a></li>
+          <li><a href="#">link 03</a></li>
+          <li><a href="#">link 04</a></li>
+          <li><a href="#">link 05</a></li>
+          <li><a href="#">link 06</a></li>
+          <li><a href="www.indegene.com">link 07</a></li>
+          <li><a href="#">link 08</a></li>
+          <li><a href="#">link 09</a></li>
+          <li><a href="#">link 10</a></li>
+        </ul>
+      </nav>
+    
+    </div>
+    <div class="spacer" id="section1">
+      <h2>Section 1</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum vero laboriosam illo aperiam non eveniet voluptate consectetur tempore quas sint, aut quaerat, cum minima. Sequi animi aliquid voluptas! Maiores, laboriosam!</p>
+    </div><!-- eo section1 -->
+    <div class="spacer" id="section2">
+      <h2>Section 2</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum vero laboriosam illo aperiam non eveniet voluptate consectetur tempore quas sint, aut quaerat, cum minima. Sequi animi aliquid voluptas! Maiores, laboriosam!</p>
+    </div><!-- eo section2 -->
+    <div class="spacer" id="section3">
+      <h2>Section 3</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum vero laboriosam illo aperiam non eveniet voluptate consectetur tempore quas sint, aut quaerat, cum minima. Sequi animi aliquid voluptas! Maiores, laboriosam!</p>
+    </div><!-- eo section3 -->
+    <div class="spacer" id="section4">
+      <h2>Section 4</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum vero laboriosam illo aperiam non eveniet voluptate consectetur tempore quas sint, aut quaerat, cum minima. Sequi animi aliquid voluptas! Maiores, laboriosam!</p>
+    </div><!-- eo section4 -->
+    <div class="spacer" id="section5">
+      <h2>Section 5</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum vero laboriosam illo aperiam non eveniet voluptate consectetur tempore quas sint, aut quaerat, cum minima. Sequi animi aliquid voluptas! Maiores, laboriosam!</p>
+    </div><!-- eo section5 -->
+  </div>
+
+  <script>
+      // $("[href='#']").css('color','red');
+
+      x = 0;
+
+      $('.menu a').click(function (e) { 
+        e.preventDefault();
+        text = "clicked " + ++x;
+        console.log($(this).text());
+        console.log($(this).css('font-size'));
+        $(this).text(text);
+
+        $(this).addClass('red-anchor');
+
+      });
+
+      $('.back-top').click(function (e) { 
+        e.preventDefault();
+        
+        var pagePosition = $('#section3').offset();
+        console.log(pagePosition.top);
+        $('body, html').animate({scrollTop:pagePosition.top});
+        
+      });
+      $(document).scroll(function () { 
+        // $('.sh').toggleClass('sh-fixed');
+      });
+
+
+  </script>
+
+</body>
+</html>
